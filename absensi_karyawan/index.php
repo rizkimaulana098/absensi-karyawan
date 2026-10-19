@@ -1,0 +1,1 @@
+<?php session_start(); if(!empty($_SESSION['user'])){header('Location: '.($_SESSION['user']['role']==='admin'?'dashboard.php':'dashboard_karyawan.php'));}else{header('Location: login.php');}exit;
